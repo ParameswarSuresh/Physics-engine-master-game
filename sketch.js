@@ -118,12 +118,12 @@ function draw() {
     stroke("black");
     fill("black");
     textSize(23);
-    text("Press the Space bar To Start The Game.",width/2-30, height/2-37);
+    text("Press the Up Arrow To Start The Game.",width/2-30, height/2-37);
     stroke("black");
     fill("black");
     textSize(23);
     text("The Story.",width/2-200, height/2-37);
-    if(keyWentDown("space") && gameState === START){
+    if(keyWentDown(UP_ARROW) && gameState === START){
       gameState = PLAY;
       seSound.play();
     }
